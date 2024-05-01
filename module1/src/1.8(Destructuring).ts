@@ -19,6 +19,13 @@ const user = {
 const {address, name : {middleName}} =  user
 
 
+// array destructuring
+
+const myFriends: string[] = ["Akram", "Safi", "Siam", "Rafid", "x", "y","z"]
+
+const [ , , kana, ...rest] = myFriends
+
+
 
 
 
