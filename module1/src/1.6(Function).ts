@@ -1,5 +1,5 @@
 // function in ts
-
+{
 
 function add(num1 : number, num2 : number) : number{
     return num1 + num2
@@ -22,3 +22,6 @@ const poorUser = {
 const arr :  number[] = [12,23,43]
 
 const multiArr : number[] = arr.map((elem : number) : number => elem * elem)
+
+
+}
