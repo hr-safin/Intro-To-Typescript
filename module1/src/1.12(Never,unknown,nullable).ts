@@ -1,3 +1,4 @@
+{
 // Never , Unknown and Nullable Type
 
 //Nullable Type
@@ -13,3 +14,39 @@ const searchName = (value : string | null) => {
 }
 
 // searchName(null)
+
+
+// Unknown Type
+
+const getSpeedInMeterPerSecond = (value : unknown) => {
+
+    if(typeof value === "number"){
+        const meterPerSecond = (value * 1000) / 3600
+        console.log(`The value is ${meterPerSecond} ms^-1`) 
+    }
+
+    else if(typeof value === "string"){
+        const [result, unit] = value.split(" ")
+        const meterPerSecond = (parseFloat(result) * 1000) / 3600
+        console.log(`The value is ${meterPerSecond} ms^-1`)
+    }
+    else{
+        console.log("Wrong Input")
+    }
+}
+
+
+// getSpeedInMeterPerSecond(null)
+
+
+
+
+
+
+
+
+
+
+
+}
+
