@@ -27,7 +27,39 @@
     const result1 = isAuthenticated ?? "Guest"
     const result2 = isAuthenticated ? isAuthenticated : "Guest"
 
-    console.log({result1}, {result2})
+    // console.log({result1}, {result2})
+
+
+    // optional Chaining
+
+    type User = {
+        name : string;
+        email : string;
+        address : {
+            road : number;
+            block : string;
+            house : number;
+            presentAddress : string;
+            permanentAddress? : string ;
+        }
+    }
+
+    const user : User = {
+        name : "Hasibur rahman Safin",
+        email : "erewr@fgmail.com",
+        address : {
+            road : 14,
+            block : "Block B",
+            house : 13,
+            presentAddress : "Jatrabari",
+
+        }
+    }
+
+
+    const permanentAddress = user?.address?.permanentAddress ?? "No permanent address"
+
+    console.log(permanentAddress)
 
 
 
