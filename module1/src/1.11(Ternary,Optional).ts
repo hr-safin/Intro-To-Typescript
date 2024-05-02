@@ -16,7 +16,18 @@
 
     const isAdult = age >= 18 ? "Adult" : "NOT Adult"
 
-    console.log(isAdult)
+    // console.log(isAdult)
+
+
+    // nullish coalescing = null and undefined
+    // null & undefined --> decision making
+
+    const isAuthenticated = ""
+
+    const result1 = isAuthenticated ?? "Guest"
+    const result2 = isAuthenticated ? isAuthenticated : "Guest"
+
+    console.log({result1}, {result2})
 
 
 
