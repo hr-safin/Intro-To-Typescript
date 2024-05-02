@@ -36,7 +36,17 @@ const getSpeedInMeterPerSecond = (value : unknown) => {
 }
 
 
-// getSpeedInMeterPerSecond(null)
+getSpeedInMeterPerSecond(null)
+
+// Never --> nothing will happen or run
+
+const throwError = (msg : string) : never => {
+    throw new Error(msg)
+}
+
+// throwError("Galti sey mistake ho gaya")
+
+
 
 
 
