@@ -1,3 +1,5 @@
+{
+
 // Special Type
 
 // Type Any
@@ -35,3 +37,27 @@ const getSpeedInMeterPerSecond = (value : unknown) => {
 
 getSpeedInMeterPerSecond(1000)
 getSpeedInMeterPerSecond("2000 km^-1")
+
+
+// Nullable Type
+
+const searchingName = (value : string | null) => {
+
+
+    if(value){
+        console.log("Searching")
+    }
+
+    else{
+        console.log("There is nothing to search")
+    }
+}
+
+searchingName("")
+
+
+
+
+
+
+}
