@@ -34,4 +34,14 @@ let ageOfNumber : [number, string, boolean] = [34, "Hasibur rahman safin", true]
 
 ageOfNumber[0] = 44
 
-console.log(ageOfNumber)
+// console.log(ageOfNumber)
+
+// if data types do not match, TS will throw an error
+
+let firstName : string = "Hasibur Safin"; // explicit type, string type
+
+//firstName = 33
+
+let secondName = "Hasibur Rahman Safin" // inferred to type string
+
+// secondName = 33
