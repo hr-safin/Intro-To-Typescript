@@ -31,6 +31,10 @@
         message : string
     }
 
+    type CustomError2 = {
+        message : string
+    }
+
     try{
 
     }
